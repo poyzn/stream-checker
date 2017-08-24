@@ -1,0 +1,25 @@
+logs: 
+  dir: 'logs'
+streamer:
+  url: http://service.address/json.xsl
+  prefix: /stream
+  streams: [1, 2, 6, 7, 14]
+notifier:
+  mail:
+    smtp:
+      address: smtp_server_address
+      port: port
+      username: username 
+      password: password
+      ssl: true
+    from: sender@example.com
+    recipients:
+      - recipient@example.com
+      - recipient2@example.com
+  sms:
+    address: sms_gateway_address
+    api_id: api_id
+    to:
+      - 79999999999
+      - 79999999998
+
